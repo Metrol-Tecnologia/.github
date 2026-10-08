@@ -1,0 +1,28 @@
+name: Bug
+description: Algo não funciona como deveria.
+title: "bug: "
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu
+      description: Descreva o problema e o que você esperava que acontecesse.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: Passos, dados de entrada e ambiente (produção, local, versão).
+      placeholder: |
+        1. Acesse ...
+        2. Clique em ...
+        3. Veja o erro ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidências
+      description: Logs, prints ou mensagens de erro. Não inclua senhas nem dados pessoais.
+      render: text
